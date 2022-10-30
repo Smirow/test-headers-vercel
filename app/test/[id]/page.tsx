@@ -5,7 +5,7 @@ export default function TestPage() {
   return (
     <div>
       TEST PAGE {id}
-      <Link href={`/test/${id}`}></Link>
+      <Link href={`/test/${id + 1}`}>dd</Link>
     </div>
   );
 }
