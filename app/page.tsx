@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { headers } from "next/headers";
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Link href="/test">Test Page</Link>
-      <Link href="/test/1">Test id</Link>
+      <Link href="/test/">Test id</Link>
     </div>
   );
 }
