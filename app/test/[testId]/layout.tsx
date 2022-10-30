@@ -12,7 +12,9 @@ export default function TestLayout({
   console.log(params);
   return (
     <div>
-      <Link href={`test/${params?.testId}`}>Main</Link>
+      <Link href={`test/${params?.testId}`} prefetch={false}>
+        Main
+      </Link>
       <Link href={`test/${params?.testId}/second`}>Second</Link>
       <Link
         href={{
