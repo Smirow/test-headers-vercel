@@ -1,3 +1,3 @@
 export default function SecondPage() {
-  <div>Second Page</div>;
+  return <div>Second Page</div>;
 }
