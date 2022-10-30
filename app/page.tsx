@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Link href="/test">Test Page</Link>
+      <Link href="/test/1">Test id</Link>
     </div>
   );
 }
