@@ -1,11 +1,19 @@
 import Link from "next/link";
 
-export default function TestLayout({ params }: { params: { testId: string } }) {
+type PageParams = Record<string, string>;
+
+export default function TestLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params?: PageParams;
+}) {
   console.log(params);
   return (
     <div>
-      <Link href={`test/${params.testId}`}>Main</Link>
-      <Link href={`test/${params.testId}/second`}>Second</Link>
+      <Link href={`test/${params?.testId}`}>Main</Link>
+      <Link href={`test/${params?.testId}/second`}>Second</Link>
     </div>
   );
 }
