@@ -16,16 +16,8 @@ export default function TestLayout({
         Main
       </Link>
       <br></br>
-      <Link href={`test/${params?.testId}/second`}>Second</Link>
+      <Link href={`test/${params?.testId}/second`}>Leaf</Link>
       <br></br>
-      <Link
-        href={{
-          pathname: "/test/[testId]/second",
-          query: { testId: params?.testId },
-        }}
-      >
-        SecondQuery
-      </Link>
     </div>
   );
 }
