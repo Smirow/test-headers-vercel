@@ -15,7 +15,9 @@ export default function TestLayout({
       <Link href={`test/${params?.testId}`} prefetch={false}>
         Main
       </Link>
+      <br></br>
       <Link href={`test/${params?.testId}/second`}>Second</Link>
+      <br></br>
       <Link
         href={{
           pathname: "/test/[testId]/second",
