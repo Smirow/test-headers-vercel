@@ -16,7 +16,7 @@ export default function TestLayout({
         Main
       </Link>
       <br></br>
-      <Link href={`test/${params?.testId}/second`}>Leaf</Link>
+      <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
     </div>
   );
