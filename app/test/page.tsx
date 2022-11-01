@@ -14,11 +14,12 @@ export default function TestPage() {
         href={{
           pathname: "/test/[testId]/leaf",
           query: {
-            testId: 3,
+            testId: 2,
           },
         }}
       >
-        Leaf using url object
+        Leaf using url object (seems to do a pre-fetch but still forces a page
+        reload)
       </Link>
     </div>
   );
