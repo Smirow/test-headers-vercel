@@ -13,11 +13,11 @@ export default function TestLayout({
     <div>
       {children}
       <br></br>
-      <Link href={`test/${params?.testId}`}>Main</Link>
+      <Link href={`/test/${params?.testId}`}>Main</Link>
       <br></br>
-      <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
+      <Link href={`/test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
-      <Link href={`test/[testId]/leaf`}>Leaf using testId = [testId]</Link>
+      <Link href={`/test/[testId]/leaf`}>Leaf using testId = [testId]</Link>
     </div>
   );
 }
