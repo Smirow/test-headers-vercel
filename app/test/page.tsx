@@ -7,7 +7,9 @@ export default function TestPage() {
       <br></br>
       <Link href={`test/1/leaf`}>Leaf</Link>
       <br></br>
-      <Link href="test/[testId]/leaf">Leaf using testId = [testId]</Link>
+      <Link href="test/[testId]/leaf?testId=1">
+        Leaf using search params ?testId=??
+      </Link>
       <br></br>
       <Link href="test/testId/leaf">Leaf using non-numeric</Link>
     </div>

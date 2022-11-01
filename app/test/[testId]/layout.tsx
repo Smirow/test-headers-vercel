@@ -17,7 +17,9 @@ export default function TestLayout({
       <br></br>
       <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
-      <Link href="test/[testId]/leaf">Leaf using testId = [testId]</Link>
+      <Link href={`test/[testId]/leaf?testId=${params?.testId}`}>
+        Leaf using search params ?testId={params?.testId}
+      </Link>
       <br></br>
       <Link href="test/testId/leaf">Leaf using non-numeric</Link>
     </div>
