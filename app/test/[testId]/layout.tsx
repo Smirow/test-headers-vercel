@@ -17,9 +17,7 @@ export default function TestLayout({
       <br></br>
       <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
-      <Link href="test/[testId]/leaf" as={`test/${params?.testId}/leaf`}>
-        Leaf using deprecated as
-      </Link>
+      <Link href="test/[testId]/leaf">Leaf using testId = [testId]</Link>
       <br></br>
       <Link href="test/testId/leaf">Leaf using non-numeric</Link>
     </div>
