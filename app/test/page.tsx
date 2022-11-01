@@ -17,6 +17,7 @@ export default function TestPage() {
             testId: 3,
           },
         }}
+        as="/test/3/leaf"
       >
         Leaf using url object
       </Link>
