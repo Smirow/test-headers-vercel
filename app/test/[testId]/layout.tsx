@@ -18,8 +18,10 @@ export default function TestLayout({
       <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
       <Link href="test/[testId]/leaf" as={`test/${params?.testId}/leaf`}>
-        Leaf using as
+        Leaf using deprecated as
       </Link>
+      <br></br>
+      <Link href="test/testId/leaf">Leaf using non-numeric</Link>
     </div>
   );
 }
