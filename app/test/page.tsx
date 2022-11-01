@@ -18,6 +18,7 @@ export default function TestPage() {
           },
         }}
         as="/test/3/leaf"
+        shallow={true}
       >
         Leaf using url object
       </Link>
