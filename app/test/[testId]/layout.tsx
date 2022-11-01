@@ -17,6 +17,9 @@ export default function TestLayout({
       <br></br>
       <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
+      <Link href="`test/[testId]/leaf" as={`test/${params?.testId}/leaf`}>
+        Leaf using as
+      </Link>
     </div>
   );
 }
