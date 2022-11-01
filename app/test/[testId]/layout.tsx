@@ -9,9 +9,10 @@ export default function TestLayout({
   children: React.ReactNode;
   params?: PageParams;
 }) {
-  console.log(params);
   return (
     <div>
+      {children}
+      <br></br>
       <Link href={`test/${params?.testId}`}>Main</Link>
       <br></br>
       <Link href={`test/${params?.testId}/leaf`}>Leaf</Link>
