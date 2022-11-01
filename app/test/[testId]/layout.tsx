@@ -18,6 +18,18 @@ export default function TestLayout({
       <Link href={`/test/${params?.testId}/leaf`}>Leaf</Link>
       <br></br>
       <Link href={`/test/[testId]/leaf`}>Leaf using testId = [testId]</Link>
+      <br></br>
+      <Link
+        href={{
+          pathname: "/test/[testId]/leaf",
+          query: {
+            testId: params?.testId,
+          },
+        }}
+      >
+        Leaf using url object (seems to do a pre-fetch but still forces a page
+        reload)
+      </Link>
     </div>
   );
 }
