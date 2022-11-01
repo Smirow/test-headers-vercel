@@ -8,8 +8,6 @@ export default function TestPage() {
       <Link href={`test/1/leaf`}>Leaf</Link>
       <br></br>
       <Link href="test/[testId]/leaf">Leaf using testId = [testId]</Link>
-      <br></br>
-      <Link href="test/testId/leaf">Leaf using non-numeric</Link>
     </div>
   );
 }
